@@ -6,8 +6,11 @@ module.exports = async () => {
     const sol = json.sol_keys;
 	const last = sol.slice(-1)[0] 
 	return {
+		Sol_Date: last,
 		First_Date: parseInt (Date.parse(json[last].First_UTC)/1000),
 		Last_Date: parseInt (Date.parse(json[last].Last_UTC)/1000),
-		Data: json[last]
+		Data: json[last],
+		sol_keys: sol,
+		validity_checks: json.validity_checks
 	};
 };
