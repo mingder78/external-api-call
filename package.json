@@ -1,5 +1,5 @@
 {
-  "name": "external-api-call",
+  "name": "mars-report-external-api-call",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
